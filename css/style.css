@@ -8,6 +8,9 @@ body, h1,h2,h3,h4,h5,h6,a,p,li{
 .white-color{
     color: #fff !important;
 }
+.black-color{
+    color: #000 !important;
+}
 .clip-1{
     height: 80vw;
     width: 100%;
@@ -40,6 +43,42 @@ body, h1,h2,h3,h4,h5,h6,a,p,li{
     left: 0;
     margin-top: calc(60% + 5px);
 }
+.clip-4{
+    height: 69vw;
+    width: 100%;
+    background: url(../image/clip-4.png) top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    right: 0;
+    margin-top: 93%;
+}
+.clip-5{
+    height: 74vw;
+    width: 101%;
+    background: url(../image/clip-5.png) top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin-top: 132%;
+}
+.clip-6{
+    height: 45vw;;
+    width: 100%;
+    background: url(../image/clip-6.png) top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin-top: calc(175% - 5px);
+}
 .clip-2-content{
     position: absolute;
     top: 21vw;
@@ -51,7 +90,10 @@ body, h1,h2,h3,h4,h5,h6,a,p,li{
 
 .clip-1 .posr,
 .clip-2 .posr,
-.clip-3 .posr{
+.clip-3 .posr,
+.clip-4 .posr,
+.clip-5 .posr,
+.clip-6 .posr{
     width: 100%;
     height: 100%;
 }
@@ -98,35 +140,8 @@ body, h1,h2,h3,h4,h5,h6,a,p,li{
 navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: rgba(255, 255, 255, 0.32);
 }
-@media only screen and (min-width : 768px) {
-    .navbar-default {
-        border: none;
-        margin-top: 45px;
-    }
 
-    .nav > li > a{
-        padding: 10px 20px;
-    }
 
-    .navbar > .container .navbar-brand{
-        margin: 0;
-        padding: 0;
-        height: auto;
-        margin-top: -21px;
-        margin-left: 90px;
-    }
-    .navbar-brand img{
-        max-height: 130px;
-    }
-    .logo-small{
-        display: none;
-    }
-}
-@media only screen and (min-width : 767px) and (max-width:1200px) {
-    .navbar > .container .navbar-brand{
-        margin-left: 0;
-    }
-}
 @media only screen and (max-width : 767px) {
     .navbar-default .navbar-collapse, .navbar-default .navbar-form{
         background-color: #6f427e;
@@ -143,7 +158,10 @@ navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 /*/////*/
 .clip-1-content,
 .clip-2-content,
-.clip-3-content{
+.clip-3-content,
+.clip-4-content,
+.clip-5-content,
+.clip-6-content{
     position: absolute;
 }
 .clip-1-content{
@@ -151,9 +169,27 @@ navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     right: 0;
     top: 22vw;
 }
+.clip-4-content{
+    top: 24vw;
+    left: 0;
+    right: 0;
+}
+.clip-5-content{
+    top: 24vw;
+    left: 0;
+    right: 0;
+}
+.clip-6-content{
+    top: 9vw;
+    left: 0;
+    right: 0;
+}
+
 .clip-1-content h3,
 .clip-2-content h3,
-.clip-3-content h3{
+.clip-3-content h3,
+.clip-4-content h3,
+.clip-5-content h3{
     font-weight: 700;
     font-size: 32px;
 }
@@ -183,18 +219,253 @@ a.btn-learn-more{
     top: 12vw;
     padding-right: 17vw;
 }
-@media only screen and (max-width : 1024px){
-    /*.clip-1{*/
-        /*height: 829px;*/
-    /*}*/
-    /*.clip-2{*/
-        /*height: 813px;*/
-    /*}*/
-    /*.clip-3{*/
-        /*height: 638px;*/
-    /*}*/
+a.scroll-down{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 41vw;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #805b88;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+a.scroll-down i{
+    color: #fff;
+    font-size: 28px;
+    line-height: 39px;
+}
+.border-img{
+    width: 321px;
+}
+.clip-4-content p{
+    color: #636363;
+    font-size: 18px;
+}
+/*Slider*/
+.carousel-control.left,
+.carousel-control.right{
+    background: transparent;
+}
+#quote-carousel blockquote{
+    border: 0;
+}
+#quote-carousel .carousel-control{
+    bottom: auto;
+    width: 36%;
+    text-shadow: none;
+}
+#quote-carousel .carousel-indicators {
+    top: 20px;
+    bottom: auto;
+}
+#quote-carousel .item{
+    margin-top: 125px;
+}
+#quote-carousel .carousel-indicators li{
+    height: 60px;
+    width: 60px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    overflow: hidden;
+    box-shadow: 0 0 10px 3px  #888888;
+    border-radius: 0;
+    margin: 0 17px;
+    background: #fff;
+}
+#quote-carousel .carousel-indicators li img{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+#quote-carousel .item h3{
+    color: #cc2b66;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#quote-carousel .item h4{
+    font-size: 15px;
+    color: #5a286a;
+    font-weight: 600;
+}
+#quote-carousel .item p{
+    font-size: 16px;
+    color: #636363;
+    font-style: italic;
+    padding-top: 15px;
+}
+.carousel-indicators li.active{
+    height: 80px !important;
+    width: 80px !important;
+    position: relative;
+    top: 10px;
+}
+a.carousel-control i{
+    color: #c7c7c7;
+    font-size: 39px;
+    position: relative;
+}
+a.carousel-control i:after{
+    content: '';
+    width: 180px;
+    height: 1px;
+    background: #d8d8d8;
+    display: block;
+    position: absolute;
+}
+i.fa-angle-left:after {
+    left: 16px;
+    top: 20px;
+}
+i.fa-angle-right:after {
+    right: 16px;
+    top: 20px;
+}
+.carousel-control{
+    top: 49px;
+}
+.center-footer-col{
+    margin-top: 9vw;
+}
+.left-footer-col h4,
+.center-footer-col h4,
+.center-footer-col2 h4{
+    color: #fff;
+    border-bottom: 1px solid #2b2b2b;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+}
+.left-footer-col ul{
+    margin-top: 14px;
+}
+.left-footer-col ul li{
+    padding: 5px 0;
+    color: #909091;
+}
+.left-footer-col ul li a{
+    color: #909091;
+    transition: all 0.3s linear;
+}
+.left-footer-col ul li a:hover{
+    color: #cc2b66;
+    padding-left: 5px;
+}
+.footer-col-2{
+    margin-top: 30px;
+}
+.git-in{
+    margin-top: 12px;
+}
+.git-in button,
+.git-in i.get-place{
+    position: absolute;
+}
+i.get-place{
+    color: #828282;
+    top: 13px;
+    font-size: 18px;
+    left: 13px;
+}
+.git-in input{
+    padding: 10px 10px 10px 40px;
+    width: 80%;
+    border: 0;
+    height: 44px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+
+}
+.git-in button{
+    background: #cc2b66;
+    border: 0;
+    color: #fff;
+    width: 45px;
+    height: 44px;
+    right: 5vw;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.git-in button i{
+    font-size: 34px;
+}
+.social-list li{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.social-list li:not(:last-child){
+    margin-right: 10px;
+}
+.social-list li a{
+    display: block;
+    background: #242424;
+    color: #929292;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.social-list li a:hover{
+    background: #5a286a;
+    color: #fff;
+}
+.center-footer-col2{
+    margin-top: 30px;
+}
+@media only screen and (max-width : 1023px){
+    .clip-4,
+    .clip-5{
+        background: none;
+    }
+    .clip-5-content{
+        background-color: #f6f6f6;
+        padding: 50px 0;
+
+    }
+
 }
 
+
+@media only screen and (min-width : 768px) {
+    .navbar-default {
+        border: none;
+        margin-top: 45px;
+    }
+    .clip-4-content p{
+        color: #636363;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 16px;
+        width: 88%;
+    }
+
+    .nav > li > a{
+        padding: 10px 20px;
+    }
+
+    .navbar > .container .navbar-brand{
+        margin: 0;
+        padding: 0;
+        height: auto;
+        margin-top: -21px;
+        margin-left: 90px;
+    }
+    .navbar-brand img{
+        max-height: 130px;
+    }
+    .logo-small{
+        display: none;
+    }
+}
 @media only screen and (max-width : 768px){
     /*.clip-1{*/
         /*height: 625px;*/
@@ -205,24 +476,47 @@ a.btn-learn-more{
     /*.clip-3{*/
         /*height: 478px;*/
     /*}*/
+    #quote-carousel .carousel-indicators li{
+        display: none;
+    }
+    .carousel-indicators li.active{
+        display: block !important;
+        margin: 0 auto !important;
+    }
+
+
+    .clip-5{
+        margin-top: 127%;
+    }
+
+    .clip-4-content p{
+        font-size: 13px;
+    }
     .clip-1-content h3,
     .clip-2-content h3,
-    .clip-3-content h3
+    .clip-3-content h3,
+    .clip-4-content h3,
+    .clip-5-content h3
     {
         font-weight: 700;
         font-size: 25px;
     }
+
     .clip-1-content h2 {
         font-weight: 700;
         font-size: 44px;
     }
 }
+
 @media only screen and (max-width : 480px) {
     a.btn-learn-more{
         padding: 6px 9px;
         padding-right: 18px;
         font-size: 10px;
         margin-top: 15px !important;
+    }
+    .border-img {
+        width: 194px;
     }
     .btn-learn-more i{
         top: 6px;
@@ -246,9 +540,14 @@ a.btn-learn-more{
     /*}*/
     .clip-1-content h3,
     .clip-2-content h3,
-    .clip-3-content h3{
+    .clip-3-content h3,
+    .clip-4-content h3,
+    .clip-5-content h3{
         font-weight: 700;
         font-size: 16px;
+    }
+    .clip-5 {
+        margin-top: 159%;
     }
     .clip-1-content h2 {
         font-weight: 700;
@@ -257,6 +556,11 @@ a.btn-learn-more{
 
 
 }
+@media only screen and (max-width : 375px){
+    .clip-5 {
+        margin-top: 172%;
+    }
+}
 @media only screen and (max-width : 320px){
     /*.clip-1{*/
         /*height: 257px;*/
@@ -264,14 +568,49 @@ a.btn-learn-more{
     /*.clip-2{*/
         /*height: 257px;*/
     /*}*/
+    .clip-5{
+        margin-top: 195%;
+    }
     .clip-1-content h3,
     .clip-2-content h3,
-    .clip-3-content h3{
+    .clip-3-content h3,
+    .clip-4-content h3,
+    .clip-5-content h3{
         font-weight: 700;
         font-size: 14px;
     }
     .clip-1-content h2 {
         font-weight: 700;
         font-size: 24px;
+    }
+}
+@media only screen and (min-width : 767px) and (max-width:1200px) {
+    .navbar > .container .navbar-brand{
+        margin-left: 0;
+    }
+
+
+}
+@media only screen and (min-width : 1023px) and (max-width:1200px) {
+    .clip-5-content {
+        top: 18vw;
+        left: 0;
+        right: -265px;
+    }
+    .left-footer-col ul li{
+        padding: 2px 0;
+    }
+    .footer-col-2{
+        margin-top: 10px;
+    }
+
+}
+.flat-portfolio .item img{
+    height: 243px;
+    width: 100%;
+}
+@media only screen and (max-width: 1366px){
+    .flat-portfolio .portfolio-details {
+        padding: 20px 0 0 50px;
     }
 }

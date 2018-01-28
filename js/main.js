@@ -27,3 +27,11 @@ sr.reveal('.top-scroll', {easing: 'ease-out',scale: 1, origin: 'top', distance: 
 sr.reveal('.bottom-scroll', {easing: 'ease-out',scale: 1, origin: 'bottom', distance: '50px', duration: 1000 });
 sr.reveal('.right-scroll', {origin: 'right', distance: '300px', duration: 2000});
 sr.reveal('.left-scroll', {origin: 'left', distance: '300px', duration: 2000});
+
+$('.clip-1 a').click(function (e) {
+    e.preventDefault();
+
+    $('html , body').animate({
+        scrollTop:$('#' + $(this).data('scroll')).offset().top + 10
+    },1000);
+});
