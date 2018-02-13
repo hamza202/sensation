@@ -28,7 +28,7 @@ sr.reveal('.bottom-scroll', {easing: 'ease-out',scale: 1, origin: 'bottom', dist
 sr.reveal('.right-scroll', {origin: 'right', distance: '300px', duration: 2000});
 sr.reveal('.left-scroll', {origin: 'left', distance: '300px', duration: 2000});
 
-$('.clip-1 a').click(function (e) {
+$('.clip-1 a.scroll-down').click(function (e) {
     e.preventDefault();
 
     $('html , body').animate({

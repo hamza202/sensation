@@ -1,15 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,700');
 body{
     overflow-x: hidden;
 }
 body, h1,h2,h3,h4,h5,h6,a,p,li{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Dosis', sans-serif;
 }
 /*App sitting*/
 .white-color{
     color: #fff !important;
 }
+.over-h{
+    overflow: hidden;
+    margin-top: 132%;
+    position: absolute;
+    height: 75vw;
+    width: 100%;
+}
 .black-color{
     color: #000 !important;
+}
+.clip-5-content p{
+    font-size: 16px;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img{
+    height: 71vw;
+}
+.skwe-1 {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    top: -20vw;
+    transform: skew(0deg, -20.5deg);
+    -webkit-transform: skew(0deg, -20.5deg);
+    -ms-transform: skew(0deg, -20.5deg);
+    -o-transform: skew(0deg, -20.5deg);
+    -moz-transform: skew(0deg, -20.5deg);
+    height: 79vw;
+    overflow: hidden;
 }
 .clip-1{
     height: 80vw;
@@ -18,12 +45,17 @@ body, h1,h2,h3,h4,h5,h6,a,p,li{
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
-    z-index: 1;
-    top: 0;
+    z-index: 10;
+    top: 20vw;
+    transform: skew(0deg, 20.5deg) !important;
+    -webkit-transform: skew(0deg, 20.5deg) !important;
+    -ms-transform: skew(0deg, 20.5deg) !important;
+    -o-transform: skew(0deg, 20.5deg) !important;
+    -moz-transform: skew(0deg, 20.5deg) !important;
 }
 .clip-2{
-    height: 78vw;
-    width: 49%;
+    height: 100%;
+    width: 100%;
     background: url(../image/clip-2.png) top center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -31,17 +63,58 @@ body, h1,h2,h3,h4,h5,h6,a,p,li{
     z-index: 3;
     right: 0;
     margin-top: calc(42% + 5px);
+    transform: skew(0deg, -50.5deg);
+}
+.skwe-2 {
+    width: 49%;
+    height: 69vw;
+    background-size: 100%;
+    position: absolute;
+    z-index: 7;
+    right: 0;
+    overflow: hidden;
+    margin-top: calc(22% + -7px);
+    transform: skew(0deg, 50.5deg);
+    -webkit-transform: skew(0deg, 50.5deg);
+    -ms-transform: skew(0deg, 50.5deg);
+    -o-transform: skew(0deg, 50.5deg);
+    -moz-transform: skew(0deg, 50.5deg);
+}
+.skwe-3{
+    transform: skew(0deg, 16.5deg);
+    -webkit-transform: skew(0deg, 16.5deg);
+    -ms-transform: skew(0deg, 16.5deg);
+    -o-transform: skew(0deg, 16.5deg);
+    -moz-transform: skew(0deg, 16.5deg);
+    height: calc(46vw - 9px);
+    margin-top: calc(60% + 5px);
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    z-index: 6;
+    background: #fff;
 }
 .clip-3{
+    transform: skew(0deg, -16.5deg);
+    -webkit-transform: skew(0deg, -16.5deg);
+    -ms-transform: skew(0deg, -16.5deg);
+    -o-transform: skew(0deg, -16.5deg);
+    -moz-transform: skew(0deg, -16.5deg);
     height: 61vw;
     width: 100%;
     background: url(../image/clip-3.png) top center;
     background-repeat: no-repeat;
     background-size: 100%;
-    position: absolute;
-    z-index: 2;
+    transition: all 0.7s;
     left: 0;
-    margin-top: calc(60% + 5px);
+    /*margin-top: calc(60% + 5px);*/
+}
+.clip-3:hover{
+    background: url(../image/clip-3-1.png) top center !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+
 }
 .clip-4{
     height: 69vw;
@@ -55,9 +128,25 @@ body, h1,h2,h3,h4,h5,h6,a,p,li{
     right: 0;
     margin-top: 93%;
 }
+
+.skwe-5 {
+    transform: skew(0deg, -16.5deg);
+    -webkit-transform: skew(0deg, -16.5deg);
+    -ms-transform: skew(0deg, 16.5deg);
+    -o-transform: skew(0deg, 16.5deg);
+    -moz-transform: skew(0deg, 16.5deg);
+    position: absolute;
+    height: 35vw;
+    z-index: 16;
+    left: 0;
+    right: 0;
+    margin-top: 15%;
+}
 .clip-5{
     height: 74vw;
+    top: -15vw;
     width: 101%;
+    -webkit-transform: skew(0deg, 16.5deg) !important;
     background: url(../image/clip-5.png) top center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -65,7 +154,6 @@ body, h1,h2,h3,h4,h5,h6,a,p,li{
     z-index: 3;
     left: 0;
     right: 0;
-    margin-top: 132%;
 }
 .clip-6{
     height: 45vw;;
@@ -74,7 +162,7 @@ body, h1,h2,h3,h4,h5,h6,a,p,li{
     background-repeat: no-repeat;
     background-size: 100%;
     position: absolute;
-    z-index: 3;
+    z-index: 20;
     left: 0;
     right: 0;
     margin-top: calc(175% - 5px);
@@ -102,7 +190,7 @@ body, h1,h2,h3,h4,h5,h6,a,p,li{
 .navbar{
     position: absolute;
     width: 100%;
-    z-index: 10;
+    z-index: 15;
 }
 .top-phone{
 
@@ -202,6 +290,7 @@ a.btn-learn-more{
     background-color: #cc2b66;
     color: #fff;
     padding: 8px 22px;
+    font-size: 16px;
     padding-right: 25px;
     text-transform: uppercase;
 }
@@ -217,7 +306,7 @@ a.btn-learn-more{
 .clip-3-content{
     left: 0;
     right: 0;
-    top: 12vw;
+    top: 20vw;
     padding-right: 17vw;
 }
 a.scroll-down{
@@ -299,12 +388,12 @@ a.scroll-down i{
     font-style: italic;
     padding-top: 15px;
 }
-.carousel-indicators li.active{
-    height: 80px !important;
-    width: 80px !important;
-    position: relative;
-    top: 10px;
-}
+/*.carousel-indicators li.active{*/
+    /*height: 80px !important;*/
+    /*width: 80px !important;*/
+    /*position: relative;*/
+    /*top: 10px;*/
+/*}*/
 a.carousel-control i{
     color: #c7c7c7;
     font-size: 39px;
@@ -327,7 +416,7 @@ i.fa-angle-right:after {
     top: 20px;
 }
 .carousel-control{
-    top: 49px;
+    top: 0px;
 }
 .center-footer-col{
     margin-top: 9vw;
@@ -504,11 +593,22 @@ a.back-top i{
     .clip-6-content{
         padding: 50px 0;
     }
+    .skwe-3{
+        margin-top: calc(60% + 1px);
+    }
     .clip-6{
-        margin-top: calc(206% - 5px);;
+        margin-top: calc(192% - 5px);;
     }
     .left-footer-col{
         padding-right:0px;
+    }
+    .skwe-5{
+        margin-top: -10vw;
+    }
+    .over-h{
+        height: 52vw;
+        margin-top: 161%;
+
     }
     .git-in{
         margin: 0 auto;
@@ -530,13 +630,12 @@ a.back-top i{
         padding: 50px 0;
     }
     .carousel-indicators li.active{
-        display: block !important;
-        margin: 0 auto !important;
+        /*display: block !important;*/
+        /*margin: 0 auto !important;*/
     }
 
 
     .clip-5{
-        margin-top: 127%;
     }
 
     .clip-4-content p{
@@ -560,7 +659,10 @@ a.back-top i{
 
 @media only screen and (max-width : 480px) {
     .clip-6{
-        margin-top: 292%;
+        margin-top: 224%;
+    }
+    .over-h{
+        height: 87vw;
     }
     a.btn-learn-more{
         padding: 6px 9px;
@@ -600,7 +702,7 @@ a.back-top i{
         font-size: 16px;
     }
     .clip-5 {
-        margin-top: 159%;
+        margin-top: 0;
     }
     .clip-1-content h2 {
         font-weight: 700;
@@ -610,11 +712,12 @@ a.back-top i{
 
 }
 @media only screen and (max-width : 375px){
-    .clip-5 {
-        margin-top: 172%;
-    }
+
     .clip-6 {
-        margin-top: 320%;
+        margin-top: 251%;
+    }
+    .over-h{
+        height: 99vw;
     }
 
 }
@@ -625,11 +728,11 @@ a.back-top i{
     /*.clip-2{*/
         /*height: 257px;*/
     /*}*/
-    .clip-5{
-        margin-top: 195%;
+    .over-h {
+        height: 136vw;
     }
     .clip-6 {
-        margin-top: 370%;
+        margin-top: 282%;
     }
     .clip-1-content h3,
     .clip-2-content h3,
@@ -653,9 +756,8 @@ a.back-top i{
 }
 @media only screen and (min-width : 1023px) and (max-width:1200px) {
     .clip-5-content {
-        top: 18vw;
+        top: 22vw;
         left: 0;
-        right: -265px;
     }
     .left-footer-col ul li{
         padding: 2px 0;
@@ -680,8 +782,20 @@ a.back-top i{
     height: 243px;
     width: 100%;
 }
+
 @media only screen and (max-width: 1366px){
     .flat-portfolio .portfolio-details {
         padding: 20px 0 0 50px;
     }
+}
+.carousel{
+    top: -27vw;
+}
+.carousel-caption{
+    top: 45%;
+}
+.carousel-caption p{
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+
 }
