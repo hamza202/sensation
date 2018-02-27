@@ -62,18 +62,18 @@ body, h1,h2,h3,h4,h5,h6,a,p,li{
     position: absolute;
     z-index: 3;
     right: 0;
-    margin-top: calc(42% + 5px);
+    margin-top: calc(60% + 5px);
     transform: skew(0deg, -50.5deg);
 }
 .skwe-2 {
     width: 49%;
-    height: 69vw;
+    height: 77vw;
     background-size: 100%;
     position: absolute;
     z-index: 7;
     right: 0;
     overflow: hidden;
-    margin-top: calc(22% + -7px);
+    margin-top: calc(13% + -6px);
     transform: skew(0deg, 50.5deg);
     -webkit-transform: skew(0deg, 50.5deg);
     -ms-transform: skew(0deg, 50.5deg);
@@ -87,6 +87,7 @@ body, h1,h2,h3,h4,h5,h6,a,p,li{
     -o-transform: skew(0deg, 16.5deg);
     -moz-transform: skew(0deg, 16.5deg);
     height: calc(46vw - 9px);
+    border-bottom: 7px solid #fff;
     margin-top: calc(60% + 5px);
     position: absolute;
     overflow: hidden;
@@ -110,11 +111,9 @@ body, h1,h2,h3,h4,h5,h6,a,p,li{
     /*margin-top: calc(60% + 5px);*/
 }
 .clip-3:hover{
-    background: url(../image/clip-3-1.png) top center !important;
+    background: url(../image/clip-3-1.png) top center;
     background-repeat: no-repeat;
     background-size: 100%;
-
-
 }
 .clip-4{
     height: 69vw;
